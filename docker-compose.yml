@@ -1,0 +1,15 @@
+version: '2'
+services:
+  tempo2:
+    build: .
+    container_name: tempo2
+    volumes:
+     - .:/data/
+     - "/var/run/docker.sock:/var/run/docker.sock"
+    hostname: localhost
+    expose:
+     - "22"
+    ports: 
+     - "2222:22/tcp"
+    image: "tempo2"
+    command: "/usr/sbin/sshd -D"
