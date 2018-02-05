@@ -7,7 +7,7 @@ Pulling a built image
 If you are instead looking to simply pull the corresponding docker image, please use:
 
 <pre><code> 
-docker pull mpifrpsr/presto
+docker pull mpifrpsr/tempo2
 </code></pre>
 
 Building from Dockerfile
